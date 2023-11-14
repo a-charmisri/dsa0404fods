@@ -1,0 +1,12 @@
+import collections
+
+# Sample dataset of likes received by each post (you should replace this with your own data)
+likes_data = [10, 15, 20, 15, 10, 25, 30, 25, 20, 10, 15]
+
+# Calculate the frequency distribution of likes
+like_distribution = collections.Counter(likes_data)
+
+# Print the frequency distribution
+print("Likes\tFrequency")
+for like, frequency in like_distribution.items():
+    print(f"{like}\t{frequency}")
